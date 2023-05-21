@@ -1,5 +1,5 @@
 # ERCOT Actual Load by Forecast Zone Scrape
-Electric Reliability Council of Texas (ERCOT) releases previous day actual load every day at 5:50 AM CST. This lambda function scrapes the ERCOT website for the latest actual load file and saves it to an S3 bucket in parquet format. The lambda function is triggered by a CloudWatch event at 13:00 UTC daily.
+Electric Reliability Council of Texas (ERCOT) releases SCED LMP prices every 5 minutes. This lambda function scrapes the ERCOT website for the previous day SCED LMP files and saves them to an S3 bucket in parquet format. The lambda function is triggered by a CloudWatch event at 13:00 UTC daily.
 
 ### Getting Started
 Simply adjust the s3_path variable in main.py to point to your S3 folder.
