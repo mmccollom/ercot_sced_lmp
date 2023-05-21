@@ -1,4 +1,4 @@
-# ERCOT Actual Load by Forecast Zone Scrape
+# ERCOT SCED LMP Scrape
 Electric Reliability Council of Texas (ERCOT) releases SCED LMP prices every 5 minutes. This lambda function scrapes the ERCOT website for the previous day SCED LMP files and saves them to an S3 bucket in parquet format. The lambda function is triggered by a CloudWatch event at 13:00 UTC daily.
 
 ### Getting Started
